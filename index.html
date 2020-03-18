@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-	<head>
+<head>
 	<meta charset="UTF-8">
-		<title>Curso HTML</title>
+	<title>Curso HTML</title>
 		
 		
-	</head>
+</head>
 <body>
-	<p>Paragrafo</p>
-	</br>
-	<b>Negrito</b>
-	</br></br></br> 
-	<!-- Comentário ignorado pelo navegador -->
-	<u>Sublinhado</u>
-	</br></br></br>
-	<i>Italico</i>
-	</br></br></br>
-	<h1>Título 1 </h1>
-	<h2> Subtítulo 2 </h2>
-	<h3> Subtítulo 3 </h3>
-	<h4> Subtítulo 4 </h4>
-	<h5> Subtítulo 5 </h5>
-	<h6> Subtítulo 6 </h6>
-	
-	<p><a href="">Link para página interna</a> </p>
-	<p><a href="mailto:marcosfratte@usp.br">Link para envio de email</a> </p>
-	<p><a href="https://github.com/uspdev/">Link para site externo</a> </p>
-	
-	<h1>Listas</h1>
-	<h2>Listas não ordenadas</h2>
-	<ul>
-		<li>Café</li>
-		<li>Refrigerante</li>
-		<li>Suco</li>
-		<li>Leite</li>
-	</ul>
-	<h2>Listas ordenadas</h2>
-	<ol>
-		<li>Café</li>
-		<li>Refrigerante</li>
-		<li>Suco</li>
-		<li>Leite</li>
-	</ol>
-	<h2>Lista de Definições</h2>
-	<dl>
-		<dt>Café</dt>
-		<dd>Bebida quente preta</dd>
-		<dt>Refrigerante</dt>
-		<dd>Bebida gasosa gelada</dd>
-		<dt>Suco</dt>
-		<dd>Bebida natural de fruta</dd>
-		<dt>Leite</dt>
-		<dd>Bebida fria branca</dd>
-	</dl>
-
-	<div>
-		<img src="usp.jpg" alt="Descrição" width="200" height="100"/>
-	
-	<address>
-	<p>Marcos Filipe Ratte Claro</p>
-	<p>Rua do Lago, 713</p>
-	<p>3091-4616</p>
-	</address>
-	</div>
+	<header>
+		<h1>Título</h1>
+		<nav>
+			<ul>
+				<li>
+				<a href="">Link 1 </a>
+				</li>
+				<li>
+				<a href="">Link 2 </a>
+				</li>
+				<li>
+				<a href="">Link 3 </a>
+				</li>
+		</nav>
+	</header>
+	<main>
+		<section>Banner</section>
+		<section>
+			<header>
+			
+			<h2>Título do post</h2>
+			<p>Autor: Marcos</p>
+			</header>
+			
+			<article>
+			<p>Sociedade Civil é uma expressão que indica o conjunto de organizações e instituições cívicas voluntárias que constituem os alicerces de uma sociedade em funcionamento, em oposição com estruturas que são ajudadas pelo Estado.</p>
+			
+			<ol>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3
+					<ol>
+						<li>Item 3.1</li>
+						<li>Item 3.2</li>
+						<li>Item 3.3
+							<ol>
+								<li>Item 3.3.1</li>
+								<li>Item 3.3.2</li>
+							</ol>
+						</li>
+					</ol>
+				</li>
+			</ol>
+			<dl>
+				<dt>Item 1</dt>
+				<dd>Texto sobre o item 1</dd>
+				<dt>Item 2</dt>
+				<dd>Texto sobre o item 2</dd>
+				<dt>Item 3</dt>
+				<dd>Texto sobre o item 3</dd>
+			</dl>
+			</article>
+			
+			<footer>
+			Escrito em XX.XX.XXXX
+			</footer>
+			
+			<aside>
+			Leia mais sobre: <a href=""> .</a>
+			</aside>
+		</section>
+		
+	</main>
+	<footer>
+		<p>Todos os direitos reservados</p>
+	</footer>
 </body>
 </html>
