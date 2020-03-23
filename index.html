@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 <head>
+
 	<meta charset="UTF-8">
 	<title>Curso HTML</title>
-		
-		
+			
 </head>
 <body>
-	<header>
+	<!-- Inicio do Cabeçalho do site -->
+	<header id="Header_Menu">
 		<h1>Título</h1>
-		<nav>
-			<ul>
-				<li>
-				<a href="">Link 1 </a>
+		<!-- Inicio do menu -->
+		<nav id="MenuPrincipal">
+			<ul class="Autores_Menu">
+				<li id="EscolaChicago">
+					<a href="">Link 1 </a>
 				</li>
-				<li>
-				<a href="">Link 2 </a>
+				<li id="Frankfurt">
+					<a href="">Link 2 </a>
 				</li>
-				<li>
-				<a href="">Link 3 </a>
+				<li id="Francesa">
+					<a href="">Link 3 </a>
 				</li>
 		</nav>
+		<!-- Fim do menu -->
 	</header>
+	<!-- Fim do Cabeçalho do site -->
 	<main>
-		<section>Banner</section>
-		<section>
-			<header>
+		<!-- Inicio do Banner do site -->
+		<section class="BannerPrincipal">Banner</section>
+		<!-- Fim do Banner do site -->
+		<section id="ArtigoPrincipal">
+		<!-- Inicio do Cabeçalho do Artigo -->
+			<header class="Header_Artigo">
 			
 			<h2>Título do post</h2>
 			<p>Autor: Marcos</p>
 			</header>
+			<!-- Fim do Cabeçalho do Artigo -->
 			
-			<article>
+			<!-- Inicio do Artigo -->
+			<article class="ArtigoPrincipal">
 			<p>Sociedade Civil é uma expressão que indica o conjunto de organizações e instituições cívicas voluntárias que constituem os alicerces de uma sociedade em funcionamento, em oposição com estruturas que são ajudadas pelo Estado.</p>
 			
-			<ol>
+			<ol id="Lista_Ordenada" class="Lista_Sumario">
 				<li>Item 1</li>
 				<li>Item 2</li>
 				<li>Item 3
@@ -50,7 +59,7 @@
 					</ol>
 				</li>
 			</ol>
-			<dl>
+			<dl id="Lista_Descritiva" class="Lista_Dicionario">
 				<dt>Item 1</dt>
 				<dd>Texto sobre o item 1</dd>
 				<dt>Item 2</dt>
@@ -59,19 +68,22 @@
 				<dd>Texto sobre o item 3</dd>
 			</dl>
 			</article>
-			
-			<footer>
+			<!-- Fim do Artigo-->
+			<!-- Inicio do Rodapé do Artigo -->
+			<footer id="RodapeArtigo">
 			Escrito em XX.XX.XXXX
 			</footer>
-			
-			<aside>
+			<!-- Fim do Rodapé do Artigo -->
+			<aside id="InfoAdicional">
 			Leia mais sobre: <a href=""> .</a>
 			</aside>
 		</section>
 		
 	</main>
-	<footer>
+	<!-- Inicio do Rodapé do Site -->
+	<footer id="RodapeSite">
 		<p>Todos os direitos reservados</p>
 	</footer>
+	<!-- Fim do Rodapé do Site -->
 </body>
 </html>
