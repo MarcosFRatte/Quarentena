@@ -1,0 +1,109 @@
+p{
+	text-decoration: underline;
+}
+/* BACKGROUND */
+#bg{
+	background-color: purple;
+}
+#bg main{
+	width:100%;
+	height:1000px;
+	background-color:black;	
+}
+
+#bg main .elemento{
+	width:50%;
+	height:50%;
+	background-color:white;
+	margin-left:25%;
+	background-attachment:fixed;
+	background-size: cover;
+}
+
+#fonts{
+	
+	background-color:white;
+	
+}
+#fonts2{
+	
+	background-color:white;
+	
+}
+#fonts3{
+	
+	background-color:white;
+	
+}
+/* FONTS */
+ #fonts p{
+	 
+	 font-size:20px;
+	 font-family:Arial;
+	 font-weight: normal;
+	 font-style: italic;
+	 color: purple;
+	 text-align: justify;
+	 text-decoration:none;
+	 text-indent: 20px;
+	 line-height: 30px;
+	 text-transform: uppercase;
+	 word-spacing: 20px;
+	 letter-spacing: 10px;
+	 
+ }
+ 
+#fonts h1{
+	
+	text-decoration: overline underline;
+	text-align:center;
+	font-variant: small-caps;
+	
+}
+ #fonts2 p{
+	 
+	 font-size:10pt;
+	 font-family:Serif;
+	 font-weight: normal;
+	 font-style: bold;
+	 color: gray;
+	 text-align: right;
+	 text-decoration:underline;
+	 text-indent: 50px;
+	 line-height: 100px;
+	 text-transform: capitalize;
+	 word-spacing: 0px;
+	 letter-spacing: 40px;
+	 
+ }
+ 
+#fonts2 h1{
+	
+	text-decoration: none;
+	text-align:left;
+	font-variant:normal;
+	
+}
+ #fonts3 p{
+	 
+	 font-size:100%;
+	 font-family:Georgia;
+	 font-style: normal;
+	 color: black;
+	 text-align: center;
+	 text-decoration:none;
+	 text-indent: -20px;
+	 line-height: -10px;
+	 word-spacing: 10px;
+	 letter-spacing: 10px;
+	 font-variant: small-caps;
+	 
+ }
+ 
+#fonts3 h1{
+	 text-transform: capitalize;
+	text-decoration: overline;
+	text-align:bottom;
+	
+	
+}
