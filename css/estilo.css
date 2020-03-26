@@ -227,3 +227,51 @@ p{
 	top:50%;
 	margin-top:-25px;
 }
+
+/* FLOAT */
+
+#float nav{
+	
+	/*float:left;*/
+	width:300px;
+	/*height:100px;*/
+	background-color: blue;
+}
+
+#float ul{
+	
+	list-style: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+}
+
+#float li{
+	
+	float:left;
+	margin-right:10px;
+}
+
+#float main{
+	
+	float:right;
+	width:500px;
+	height:100px;
+	background-color: red;
+	
+}
+
+#float .floatleft{
+	
+	float: left;
+	width:100px;
+	height:40px;
+	background-color: orange;
+	border: 1px solid black;
+}
+
+#float .clear{
+	
+	clear:both;
+}
