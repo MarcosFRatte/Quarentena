@@ -8,9 +8,10 @@
 /*FUNÇAÕ DESSE "*":
 -Tornar o site funcional nos diferentes dispostiivos*/
 
-p{
+/*p{
 	text-decoration: underline;
 }
+*/
 /* BACKGROUND */
 #bg{
 	background-color: purple;
@@ -274,4 +275,52 @@ p{
 #float .clear{
 	
 	clear:both;
+}
+
+/* SELETOR COMPLEXO */
+
+#seletor h1 + p{
+	
+	color: red;
+}
+
+#seletor h1 + p + p{
+	
+	color: blue;
+}
+
+#seletor a[href]{
+	
+	/*color: red;*/
+}
+
+#seletor a[href="www.google.com.br"]{
+	
+	/*color: green;*/
+}
+
+#seletor a[href^="www"]{
+	
+	/*color: orange;*/
+}
+
+#seletor a[href$=".br"]{
+	
+	/*color: lime;*/
+}
+
+#seletor a[href*="google"]{
+	
+	color: yellow;
+}
+
+#seletor div p > a{
+	
+	color: navy;
+}
+
+#seletor input:checked{
+	
+	height:100px;
+	width:100px;
 }
