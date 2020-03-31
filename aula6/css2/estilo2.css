@@ -1,0 +1,199 @@
+body{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6e6b4+0,ed9017+100;Yellow+3D+%231 */
+background: #f6e6b4; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #f6e6b4 0%, #ed9017 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #f6e6b4 0%,#ed9017 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #f6e6b4 0%,#ed9017 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	
+}
+
+div{
+	width:200px;
+	height:200px;
+	padding:10px;
+	/*border: 2px solid red;*/
+	border: 2px double red;
+	color: white;
+	
+	
+}
+
+.background_clip{
+	background-color: black;
+	/*background-clip: content-box;*/
+	background-clip:padding-box;
+	/*background-clip:border-box;*/
+	
+	
+}
+
+.bg_origin{
+	background-image: url("../github.jpg");
+	background-repeat: no-repeat;
+	background-color: blue;
+	/*background-origin: content-box;
+	background-origin: padding-box;*/
+	background-origin: border-box;
+	
+	
+}
+
+.bg_size{
+	background-image: url("../github.jpg");
+	background-repeat: no-repeat;
+	background-color: green;
+	/*background-size: 100%;
+	background-size: 100% 100%; 
+	background-size: 100px 150px; 
+	background-size: cover;*/
+	background-size: contain;
+	
+}
+
+.box_shadow{
+	color: black;
+	text-shadow: 5px 5px 0px white;
+	background-color: orange;
+	box-shadow: 5px 5px 5px black, 
+	5px 5px 5px black inset;
+	/*border-radius: 100px / 50px;*/
+	border-radius: 30px 100px 10px 60px;
+}
+
+.t1{
+	
+	transition-property: width;
+	transition-duration: 5s;
+	transition-timing-function: linear;
+	transition-delay: 0.5s;
+	
+	/*transition: width 5s linear 0.5s;*/
+}
+
+.t1:hover{
+	
+	width:300px;
+}
+
+.t2{
+	
+	transition: width 2s linear 0.5s, height 4s linear;
+}
+
+.t2:hover{
+	
+	width:300px;
+	height:300px;
+}
+
+.rotate{
+	color:black;
+	transform: rotate(10deg);
+}
+
+.translate{
+	color:black;
+	transform: translate(20px, 20px);
+}
+
+.scale{
+	color:black;
+	transform: scale(1, 1);
+}
+
+.skew{
+	color:black;
+	transform: skew(10deg, 10deg);
+}
+
+/*
+1. scale horizontal
+2.rotate
+3. skew horizontal
+4. scale vertical
+5. translate horizontal
+6. translate vertical
+*/
+
+.matrix{
+	
+	color:black;
+	transform: matrix(1.0, 0.8, 0, 1.0, 20, 40);
+}
+
+.rotate_x{
+	color:black;
+	transform: rotateX(180deg);
+}
+
+.rotate_y{
+	color:black;
+	transform: rotateY(180deg);
+}
+
+.rotate_z{
+	color:black;
+	transform: rotateZ(90deg);
+}
+
+.fora{
+	position: relative;
+	height:150px;
+	width:150px;
+	margin: 50px;
+	padding: 10px;
+	border: 1px solid red;
+	perspective: 160px;
+	
+}
+
+.dentro{
+	padding: 48px;
+	position: absolute;
+	border: 1px solid red;
+	background-color: black;
+	transform: rotateX(45deg);
+	width: 50px;
+	height: 50px;
+	
+}
+
+.bf_hidden{
+	
+	backface-visibility: hidden;
+}
+
+.bf_visible{
+	
+	backface-visibility: visible;
+}
+
+@keyframes rodar{
+	
+	from{
+		
+		-webkit-transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+.anima{
+	-webkit-animation-name: rodar;
+	-webkit-animation-duration:1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	
+	animation-name: rodar;
+	animation-duration:1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
+	/*-webkit-animation: rodar 1s linear infinite alternate */
+	
+}
