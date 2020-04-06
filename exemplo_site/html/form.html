@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8"  />
+	<title></title>
+	<link rel="stylesheet" href="../css/form.css" type="text/css">
+</head>
+
+<body>
+	<div id="pagina">
+	<form method="get" id="formu" action="#">
+		<fieldset id="usuario">
+			<legend>Identificação do usuario</legend>
+			<p><label for="cNome">Nome: </label> 
+			<input type="text" name="tNome" id="cNome" size="20" maxlength="50"placeholder="Nome Completo"></p>
+			<p><label for="cEmail">E-mail: </label> 
+			<input type="email" name="tEmail" id="cEmail" size="20" maxlength="50" placeholder="Digite seu E-mail"></p>
+		<fieldset id="sexo"><legend>Sexo: </legend>
+			<input type="radio" name="tSexo" id="cMasc" checked>
+			<label for="cMasc">Masculino</label>
+			<input type="radio" name="tSexo" id="cFem"> 
+			<label for="cFem">Feminino</label>
+		</fieldset>
+			<p>Data de Nascimento: <input type="date" name="tData" id="cData"></p>
+		</fieldset>
+	<fieldset id="msg">
+	
+		<legend>Mensagem do Usuário:</legend>
+		<p><label for="cGrau">Grau de Urgência: </label>
+		<select>
+		<label for="cGrau">
+		
+		<option>Mínimo</option>
+		<option>Regular</option>
+		<option>Máximo</option>
+	
+		</select></p>
+		
+	<p><label for="cAssunto">Assunto:</label> 
+	<input type="text" name="tAssunto" id="cAssunto" size="26" maxlength="26" placeholder="Digite o assunto que deseja tratar"></p>
+	<p><label for="cTxt"><text id="mensagem">Mensagem:</text></label> <textarea name="tTxt" id="cTxt" cols="45" rows="10" placeholder="Deixe aqui sua mensagem"></textarea> </p>
+	</fieldset>
+	
+	<input type="submit" id="butao">
+
+	</form>
+		</div>
+</body>
+</html>
